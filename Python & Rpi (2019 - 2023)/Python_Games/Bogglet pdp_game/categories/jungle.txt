@@ -1,0 +1,14 @@
+monkey
+tree
+vine
+leopard
+jaguar
+panther
+lion
+tiger
+sloth
+snake
+canopy
+gorilla
+crocodile
+spider

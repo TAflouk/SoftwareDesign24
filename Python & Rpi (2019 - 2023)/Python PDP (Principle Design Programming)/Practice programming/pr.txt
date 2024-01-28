@@ -1,0 +1,172 @@
+# for loop list tuple dictionary
+
+
+names = ["tony","peter","micheal","jhon","jason","conor"]
+	
+	for name in names:
+	    print("Hello" +name)
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+l1 = [77,True,99,55.5,"hello",False,34.3,"welcome"]	
+
+	for v in l1:
+	print (v)
+	print( type (v) )
+
+	or 
+	for v in range ( len(l1) ):
+	print (l1[v])
+------------------------------------------------------------------------------------------------------------------------------
+
+d1= { "name":"peter", "salary":250000, "city":"dublin" , "dept":"or" }
+
+	for v in d1:
+	print ( d1 [v])
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+#------------------while loop else
+
+
+x=1
+while x<=10:
+	print (x)
+	x+=1
+
+
+#from 1to 10
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+x=10
+while x>=1: #or -5
+print (x)
+x-=1
+
+
+# from 10 to 1
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+
+
+#-----------while loop listtuple dictionary
+
+#while in table and list 
+myT = ("hello",66.77 ,True,"dublin",False)  # or my list is same way but with []
+
+x=0
+while x < len(myT):
+	print (myT[x])
+	x+=1
+#while in dictionary
+
+
+myD= ("name":"john", "salary":3123123,"country":"Egupt")
+#print(list ( myD.keys())[0] )
+x=0
+while x < len(myD):
+print (myD [ myKeys[x]])
+x+=1
+
+------------------------------------------------------------------------------------
+
+
+again  = "y" 
+whileagain=="y":
+	num1 = int( input ("Enter number 1: ") )
+	num2 = int (input ("Enter number 2: ") )
+	r = num1+num2
+	print (r)
+	again = input ( "Do you want to continue (y/n)?")
+exit()
+-------------------------------------------------------------------------------------------------------------------- 
+#=======================specia loop on dictionary
+
+
+
+emp= {"id":111, "name":"Amr", "salary":5000, "country":"Egypt", "isactive":True }
+
+for k,v in emp.items ():
+	print (k)
+	print (v)
+	print ("================")
+# or 
+print ( str (k) + str(v)  )
+ 
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+#-----------infinity loop
+
+# with while
+
+
+
+
+x=1
+while True:
+	print (x)
+	x+=1
+
+  # or
+# with for
+
+from itertools import count
+for x in count ()
+print (x)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+# even = /2
+# odd != /2
+print ('welcome In The Even-Odd Game')
+print ('Please Enter A Number...And I will Tell You if it even or odd')
+print ('if you wanna close the game enter x ')
+
+while True :
+	number = input ('enter a number: ')
+
+	if number == 'x' :
+	   print ('closing the game')
+	   print ('thanks....')
+	   break
+
+    # even number % 2 =	0
+	try:
+	    number = int(number)
+	    if number & 2 ==0:
+	      print('even number')
+	
+	else:
+	    print('odd number')
+
+     except valueError:
+	print('Please enter a valid number')
+print('------------------------------------------------------------------')		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

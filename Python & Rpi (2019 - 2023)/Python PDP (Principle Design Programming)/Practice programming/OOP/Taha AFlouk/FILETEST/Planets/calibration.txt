@@ -1,0 +1,25 @@
+Theo
+yet again I am having to write to you asking for payment of invoices. The invoice for May and June are both outstanding.  No invoice I have issued to you has been paid on time.  The May invoice is now 40 days late.
+
+Regarding the work for the calibrator.  I will charge MSL for any effort put into the calibrator and generating the calibration files.  I will bear the cost of modifying Winfoot to work with the calibration files.
+
+The work I envisage is as follows.
+
+Design and specifying a method of calibration that will cope with:
+	Inter cell differences in performance.
+	Sensor hysteresis.
+	Output creep depending on the length of time the cell is loaded.
+	
+Specify a system that will:
+	Drive the calibrator if possible.
+	Cater for discreet areas of the plate being calibarated at any one time.
+	Capture the plate output.
+	Capture the calibrator output.
+	Provide the tools required to decide if the plate is setup correctly.
+	Validate the calibration of the plate.
+	Provide statistical information on the quality of the sensor array.
+	Generate the calibration files required for Winfoot.
+
+Develop the above program
+
+Until step one is completed I cannot provide any estimate of how long step two will take.  There will always be a certain amount of difficultly estimating how long step two will take.  There will almost certainly be points where we will hit a brick wall in some aspect of the calibrators/electronics/software performance.

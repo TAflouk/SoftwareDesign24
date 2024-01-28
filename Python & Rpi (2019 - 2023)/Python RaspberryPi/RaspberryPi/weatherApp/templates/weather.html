@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="static/w3.css"/>
+	<link rel="stylesheet" href="static/style.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+    	<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet"/>
+	<title>Raspberry Pi Weather Station</title>
+</head>
+<body>
+	<!-- Header Div-->
+	<div class="w3-container w3-teal w3-center">
+		<h1>Pi Weather Station</h1>
+	  </div>
+	<div>
+	</div>
+	<section>
+
+		<div class="w3-content w3-section" style="max-width:500px">
+			<h2 class="w3-center">Pi Weather Station</h2>
+			<img class="mySlides w3-animate-fading" src="imgs/img.png" style="width:100%">
+			<img class="mySlides w3-animate-fading" src="imgs/first_img.jpg" style="width:100%">
+			<img class="mySlides w3-animate-fading" src="imgs/scnd_img.jpg" style="width:100%">
+			<img class="mySlides w3-animate-fading" src="imgs/frth_img.jpg" style="width:100%">
+			<img class="mySlides w3-animate-fading" src="imgs/img_5.jpg" style="width:100%">
+		  </div>
+		  <div class="w3-container w3-center w3-margin w3-padding">
+			<h2>Temperature In</h2>
+			<p><strong>Celcius:</strong>{{ celcius }}</p>
+			<p><strong>Fahrenheit:</strongt>{{ fahrenheit }}</p>
+			<p>Humidity & Pressure</p>
+			<p><strong>Humidity:</strong>{{ humidity }}</p>
+			<p><strong>Pressure:</strongt>{{ pressure }}</p>
+			</div>
+	</section>
+		<!-- Open Footer -->
+		<footer class="w3-container w3-teal w3-center">
+			<p>ABerry & TAflouk &copy;</p>
+		</footer>
+	<!-- Close Footer -->
+	<script src="Js/app.js"></script>
+</body>
+
+</html>

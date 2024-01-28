@@ -1,0 +1,9 @@
+# --- Constants ---
+SPRITE_SCALING_PLAYER = 0.5
+SPRITE_SCALING_COIN = 0.2
+COIN_COUNT = 50
+
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+SCREEN_TITLE = "Sprite Collect Coins Moving Down Arcade Game"
+

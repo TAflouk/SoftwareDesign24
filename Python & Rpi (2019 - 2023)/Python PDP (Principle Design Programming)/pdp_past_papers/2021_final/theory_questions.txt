@@ -1,0 +1,29 @@
+Q1
+a
+i) Data type is a type of data such as number (int or float)
+ or a string, or a list, tuple or dict
+ int bool float and int only store one value for that type
+ but the others are also data structures tha store many values
+ 
+ii) namespace is usaully in referece to a module, but it referes to where
+  a var or fuc or class exists
+  
+  
+iii) 2 + 3 * 4 is not 20, it is 14 because of the order of operations of the operators
+  It follows PEMDAS, so multiplication gets done before addition.
+  It means you have to be careful that the ops get done int he order you want
+  
+iv) Reserved words a builtin keywords in Python- cannot use them as
+    variable or function names, e.g. print, input, len etc.
+    
+v) Exception: when python encounters an error, an exception is raised- it doesn't know how to proceed
+  e.g. ValueError- an invalid value of the correct type or
+       TypeError- the wrong type used, e.g. "2" * "5"
+       
+vi) Objects are mutable (e.g list, dict) or immutable (str, tup, int, float)
+  If some obj is immutable it cannot be modified, e.g.
+  word = 'hello' ; cannot do word[0] = 'f' -> immutable
+  shopping_list = [], can do shooping_ist.append("item") -> mutable
+  
+  
+

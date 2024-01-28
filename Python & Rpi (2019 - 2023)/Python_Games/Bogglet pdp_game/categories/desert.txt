@@ -1,0 +1,12 @@
+camel
+fennec
+vulture
+scorpion
+lizard
+cactus
+sand
+antelope
+oasis
+spider
+sun
+hot

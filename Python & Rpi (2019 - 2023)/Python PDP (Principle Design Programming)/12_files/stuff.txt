@@ -1,0 +1,9 @@
+horse
+dog
+cat
+tiger
+cow
+pink panther
+monkey
+ape
+giraffe

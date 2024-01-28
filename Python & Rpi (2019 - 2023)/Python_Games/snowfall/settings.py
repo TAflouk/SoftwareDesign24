@@ -1,0 +1,7 @@
+
+
+# ----GLOBAL/CONSTANT----
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+SCREEN_TITLE = "Snowfall example"
+NUM_FLAKES = 80
