@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>More Form Examples</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+		<style>
+				html{ background-color: rgb(255,255,204);}
+		</style>
+		<script>
+            function $ (id){
+                return document.getElementById(id);
+            }
+ 
+			function GenerateRandom(){
+                var val1 = prompt("Enter the first value");
+                var val2 = prompt("Enter the secnod value");
+                var htmlOut = "";
+                
+                if(isNaN(val1) || isNaN(val2))
+                {
+                    htmlOut += "<h1 class='w3-red w3-center'>Numerical Error</h1>";
+                    htmlOut += "<hr/><p>The reasons that you are seeing this page is because one or both of the values you entered were not nuerical in nature:</p>";
+                    htmlOut += "<h3 class='w3-red w3-center'>Data entered </h3>";
+                    htmlOut += "<p>The data you entered was";
+                    htmlOut += "<li>" + val2+"</li></ol><hr/>";
+                    htmlOut += "<h2 class='w3-red w3-center'>Refresh your page and try again</h2>";
+                    $("theBody").innerHTML = htmlOut;
+                }
+                else
+                {
+                    val1 = parseFloat(val1);
+                    val2 = parseFloat(val2);
+                    var temp;
+                    if(val1 > val2){
+                        temp = val1;
+                        val1 = val2;
+                        val2 = temp;
+
+                    }
+                    htmlOut += "<h1 class = 'w3-center w3-red'> Random Number Generator</h1>";
+                    htmlOut += "</hr><p>Here is some information on the data entered </p>";
+                    htmlOut += "<ul><li>Minimum Value = "+val1 + "</li>";
+                    htmlOut += "<ul><li>Maximum value = " + val2 + "</li></ul>";
+                    htmlOut += "<h3 class= 'w3-red w3-center'>Generating 10 random numbers between these values</h3>";
+                    var randValue = 0.0;
+                    for( var i =1; i<=10; i++){
+                        randValue = (Math.random()*(val2-val1)+val1).toFixed(2);
+                        console.log(randValue);
+                        htmlOut += "<li> "+ randValue +"</li>";
+                    }
+                    htmlOut += "</li><hr/>";
+
+
+                    $("theBody").innerHTML = htmlOut;
+                }
+            }
+		</script>
+	</head>
+	<body onload="GenerateRandom()" id="theBody">
+	</body>
+</html>

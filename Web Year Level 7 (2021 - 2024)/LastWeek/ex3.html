@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ex 3 </title>
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			html {background:rgb(255, 255, 204)}
+		</style>
+		<script>
+			function $(id)
+			{
+				return document.getElementById(id);
+			}
+			function Calc()
+			{
+				/*create a var to store the html output that be generated during the programe */
+				var htmlOut = "<h1 class='w3-black w3-center'> count even and Odd </h1>";
+				/*create a var to count the even */
+				//var evenList = [];
+				//var oddList = [];
+				var evenCounter = 0;
+				var evenResult = "";
+				var oddCounter = 0;
+				var oddResult = "";
+				var start = parseInt(prompt("Enter start position: "));
+				var end = parseInt(prompt("Enter a end position: "));
+
+				if(isNaN(start) || isNaN(end))
+				{
+					$("theBody").innerHTML = "<h1> Something went wrong </h1> <hr> <p> Please refresh your page and enter numerical value" + 
+					"<h3>Please enter an integer value between 1 and 20<br/>Refresh your page to continue...</h3>";
+				}
+				else {
+					for(var i = start ; i<= end; i++)
+					{
+						if(i %2 == 0)
+						{
+							evenCounter ++ ;
+							evenResult += i + " ";
+							//evenList.push(i);
+						}
+						else{
+							oddCounter ++ ;
+							oddResult += i + " ";
+							//oddList.push(i);
+							
+						}
+
+
+
+				
+					var htmlOut = "<h1 class= 'w3-center w3-blue'>Number evaluator<h1><hr>";
+					htmlOut += "<h2>Start position: " + start + "<br/>End Position" + end + "</h2></hr>";				}
+					htmlOut += "<h3>Even numbers between range: "  + evenCounter + "</h3>";
+					htmlOut +=  "<p><u>values include:</u><br/>"+ evenResult + "</p><hr/>";
+					htmlOut += "<h3>Odd numbers between range: "  + oddCounter + "</h3>";
+					htmlOut +=  "<p><u>values include:</u><br/>"+ oddResult + "</p><hr/>";
+					htmlOut +=  "<p class = 'w3-center w3-green'> Refresh your page and try again</p>";
+					$("theBody").innerHTML = htmlOut;
+					console.log(htmlOut)
+				}
+			}
+
+		</script>
+	</head>
+	<body id="theBody" onLoad="Calc()">
+	</body>
+</html>

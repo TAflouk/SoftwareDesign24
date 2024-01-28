@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>More Form Examples</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+		<style>
+				html{ background-color: rgb(255,255,204);}
+		</style>
+		<script>
+            function $(id){
+                return document.getElementById(id);
+            }
+			function TimesTable(){
+
+                var userEntry = parseInt(prompt("Enter a value between 1 and 20"));
+                console.log("the user entered" + userEntry);
+                var htmlOut = "";
+                if(isNaN(userEntry) || userEntry < 1 || userEntry > 20)
+                {
+                    htmlOut += "<h1 class='w3-red w3-centered'>Numerical Error</h1>" ;
+                    htmlOut += "<hr/><p>The reasons that you are seeing this page is because of one of the following reasons</p>";
+                    htmlOut += "<ol><li>The value you entered was not a valid number</li>";
+                    htmlOut += "<li>The number you entered was less than 1</li>";
+                    htmlOut += "<li>The number you entered was greater than 20</li>";
+                    htmlOut += "<h2 class='w3-red w3-centered'>Refresh your page and try again</h2>" ;
+                    
+                }
+                else{
+                    htmlOut += "<h1 class='w3-blue w3-center'>Times Tables</h1><hr/>";
+                    htmlOut += "<table border='1' style='margin-left:auto; margin-right:auto'><tr><th>Input</th></tr>";
+                    for (var i = 1; i<= userEntry; i++)
+
+                        htmlOut += "<tr><td>"+i+ "x" + userEntry + "</td><td>"+ (i*userEntry) +"</td></tr>"
+                        htmlOut += "</table>"
+                        $("theBody").innerHTML = htmlOut;
+                }
+            }
+		</script>
+	</head>
+	<body onload=TimesTable() id="theBody">
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ex 3 </title>
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			html {background:rgb(255, 255, 204)}
+		</style>
+		<script>
+			function $(id)
+			{
+				return document.getElementById(id);
+			}
+
+			function NumberEvaluator()
+			{
+            
+                /*Prompt the user for a start and end position and convert them to integers*/
+                var start = parseInt(prompt("Enter a start position"));
+                var end = parseInt(prompt("Enter a end position"));
+                console.log("Start: "+ start + "\tEnd:" + end);
+
+            /*check that they are valid nums*/ 
+            if(isNaN(start)|| isNaN(end))
+            {
+                $("theBody").innerHTML = "<h1>Error<h1><p>Please enter valid numerical values only</p>";
+            }
+            else
+            {
+            /*craete variables to store the number generated  and also to count the number of evne and odd values between the range from start to end */
+            var oddResult="", evenResult= "";
+            var oddCounter = 0, evenCounter = 0;
+            var evenSum = 0, oddSum = 0 ;
+
+            /*using for loop each num between the range */
+            for(var i = start; i <= end; i++)
+            {
+                if(i%2 == 0 )
+                {
+                    evenCounter ++;
+                    evenResult += i +" ";
+                    evenSum += i;
+                }
+                else
+                {
+                    oddCounter ++;
+                    oddResult += i + ' ';
+                    oddSum += i;
+
+                }
+            }
+            console.log("Even Numbers:"+ evenResult);
+            console.log("Odd Numbers:"+ oddResult);
+            console.log("even total :"+ evenSum   + "\tAverage: "+ (evenSum/evenCounter).toFixed(2));
+            console.log("Odd total:"+ oddSum  + "\tAverage: "+ (oddSum/oddCounter).toFixed(2));
+
+                
+            var htmlOut = "<h1 class= 'w3-center w3-blue'>NUmber Evaluator </h1><hr/>";
+            htmlOut += "<h2>Start position: " + start + "<br/>End position: "+ end + "</h2></hr>";
+            htmlOut += "<h3>Even numbers between ranges: " + evenCounter + "</h3>";
+            htmlOut += "<p><u>Values include:</u><br/>" + evenResult + "<br/>";
+            htmlOut += "Sum = "+ evenSum + "<br/>Average = " + (evenCounter).toFixed(2) + "</p><hr/>";
+            htmlOut += "<h3>Odd numbers between ranges: " + oddCounter + "</h3>";
+            htmlOut += "<p><u>Values include:</u><br/>" + oddResult + "</p><hr/>";
+            htmlOut += "Sum = "+ oddSum + "<br/>Average = " + (oddCounter).toFixed(2) + "</p><hr/>";
+            htmlOut += "<p class= 'w3-center w3-green'>Refresh your page and try again</p>";
+
+            htmlOut += "<h3>Odd numbers between ranges: " + oddCounter + "</h3>";
+
+            $("theBody").innerHTML = htmlOut;
+            console.log(htmlOut);
+			}
+            }
+
+
+		</script>
+
+	</head>
+	<body id="theBody" onLoad="NumberEvaluator()">
+	</body>
+</html>

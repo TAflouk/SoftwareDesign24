@@ -1,0 +1,93 @@
+/* Second file of CSS */
+/* TFlouk */
+
+
+
+/* generic tags*/
+
+
+/*table in PDP page  */
+
+table {
+    border-collapse:separate;
+    width: 100%;
+    border: 10px solid #5D4954;
+    padding: 15px;
+    border-image: url(border.png) 30 stretch;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+tr:nth-child(even){
+    background-color:#5D4954; color: wheat;
+}
+
+th {
+  background-color:rgb(226,226,226);
+  color: white;
+}
+/* Classes */
+
+.heads{
+    margin-top: 35px;
+    margin-bottom: 10px;
+    background-color: rgb(226,226,226);
+    color: #5D4954;
+    text-shadow: 1px 1px 2px black, 0 0 45px darkgreen, 0 0 15px black;
+
+}
+.img-size{ /* image size */
+    width: 250px;
+    height: 200px;
+    border-radius: 25px;
+    border: 10px solid #5D4954;
+    padding: 15px;
+    border-image: url(border.png) 30 stretch;
+
+}
+.left-side{ /*class to bring divs to left side with margin used for ul ol  lists */
+    text-align: left;
+    margin-left: 100px;
+}
+
+.inline-images { display: inline-block;
+    display: inline;
+    margin: 0 5px;
+    width: 300px;
+    height: 250px;
+    border: 10px solid #5D4954;
+    padding: 15px;
+    border-image: url(border.png) 30 stretch;
+
+}
+#css-rules-image{
+    width: 600px;
+    height: 300px;
+    border: 15px solid #5D4954;
+    padding: 15px;
+    border-image-source: url(border.png);
+    border-image-repeat: round;
+    border-image-slice: 30;
+    
+}
+.left-p{ /* id, paragraphs like heading but for lists */
+    
+    margin: 15px 15px 15px;
+}
+/*ids */
+
+#logo{/*id for logo image*/
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px black;
+    margin-bottom: 15px;
+}
+#right-img{/* id for images, right pos*/
+    float: right;
+    margin: 25px 250px 25px;
+    box-shadow: 15px 15px 15px black;
+}
+

@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>WEB</title>
+        <meta charset="utf-8">
+		<meta name= "discription" content="web">
+        <meta name= "keywords" content="html">
+        <meta name= "author" content="taha aflouk">
+        <meta name="robots" content="noindex, nofollow">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style_layout.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="icon" href ="favicon.svg" >
+    </head>
+
+<!-- Index Page -->
+    <body>
+        <!-- Nav -->
+        <nav>
+            <div class="logo">
+                <h4>IT Course</h4>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="pdp.html">PDP</a>
+                </li>
+                <li>
+                    <a href="oop.html">OOP</a>
+                </li>
+                <li>
+                    <a href="web.html">WEB</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Style Burger for Mobile app -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </nav>
+        <!-- Content section -->
+        <div id="content-container">
+            
+            <div>
+                <h1 class="heads">Welcome to Web</h1>
+                <img src="images/logo.gif" alt="image" id="logo">
+            </div>
+
+            <p>Hi, welcome to the level 5 web authoring course.</p>
+
+            <p class="left-p">This course covers: </p>
+            
+            <div class="left-side">
+                <ol>
+                    <li>The stages of the SDLC</li>
+                    <li>CARP, wireframing and site structure</li>
+                    <li>Development- creating pages with the required content and structure </li>
+                    <li>HTML and meta data</li>
+                    <li>Styling with CSS</li>
+                    <li>Testing- testing html and css for errors and fixing</li>
+                    <li>Release- uploading your site to a web server where you have your own domain </li>
+                    <li>Testing a live site for non-functional requirements </li>
+                    <li>Maintenance</li>
+                </ol>
+
+            </div>
+
+            <!--div for tags -->
+            <h2 class="heads">About HTML Tags</h2>
+            <div class="left-p">
+                <p>All pages are made up of tags.  Every object on a webpage – a heading, an image, a link, a list – all of these objects have their own tags.</p>
+                <p>Look at any webpage address, you will see (some browsers now hide it though) on the left hand side either http: or https. The http part is:</p>
+                <p>Hyper Text Transfer Protocol.  The "s" is added for Secure meaning that the site has some security in the form of encryption. </p>
+                <p>Hyper Text:</p>
+                <p>So all pages are created from hypertext.  They get sent across the Internet using a transfer protocol. </p>
+                <p>When you put in a url (uniform resource locator) or web address, a request goes to a server where that site lives, and the server returns the requested page if it is found.  Your computer downloads the page and it's contents, and the browser renders it.</p>
+                <p>HyperText is written in a markup language.  A markup language is one that uses angle brackets to communicate meaning.  A markup language can be used for anything, even a person. For example in XML: </p>
+            
+            </div>
+            <div class="left-side">
+                <p>&lt;person&gt;</p>
+                <p>&lt;head&gt;</p>
+                <p>&lt;eyes&gt; 2 x brown &lt;/eyes&gt;<br> &lt;mouths&gt;Yes &lt;/mouths&gt;</p>
+                <p>&lt;/head&gt;</p>
+                <p>&lt;body&gt;<br> A box of chocolates<br>&lt;/body&gt;</p>
+                <p>&lt;/person&gt;</p>
+            </div>
+
+            <div class="left-p">
+                <p>HTML</p>
+                <p>This idea of structuring is applied is present in HTML where the W3C define what "things" we can define.  There are dozens or hundreds of tags, but we'll just use a selection of the main and most useful ones. </p>
+                <p>All of the main tags we will use are in the Tag Summary page. </p>
+                <p>An Example of a heading and a paragraph are shown here: </p>
+            </div>
+            
+            <div class="left-side">
+                <p>&lt;h2&gt; Some Heading &lt;/h2&gt;</p>
+                <p>&lt;p&gt;This is a paragraph of text&lt;/p &gt;</p>
+                <p>&lt;p&gt;Another paragraph of text&lt;/p &gt;</p>
+            </div>
+
+            <div class="left-p">
+                <p>Note that each opening tag has a corresponding closing tag which has a "/" after the opening angle brace ( this thing '&lt;' ) </p>
+                <p>What goes in between is the content.  It's often text but there can be other objects that are placed between tags as well. </p>
+                <p>Nesting of HTML </p>
+                <p>The easiest way to understand nesting is to think of HTML tags as boxes that hold your content. Your content can include text, images, and related media. HTML tags are the boxes around the content. Sometimes, you need to places boxes inside of other boxes. Those "inner" boxes are nested inside of others. </p>
+                <p>If you look at the sample page, you will notice that there are lots of elements nested inside other elements.  In other words, more tags are opened and closed between the opening &lt;html&gt; and closing &lt;/html&gt;.  This is called nesting. </p>
+                <p>You'll see more about the significance of this in the page about the DOM. </p>
+                <p>If you have a block of text that you want bold inside a paragraph, you'll have two HTML elements as well as the text itself. </p>
+                <p> &lt;p&gt;Example: This is a &lt;strong&gt;sentence &lt;/strong&gt; of text.&lt;/p&gt; </p>
+                <p>As you can see, we have one box (the paragraph) which contains the content of the sentence, plus a second box (the strong tag pair), which renders that word as bold. </p>
+                <p>When you nest tags, close the tags in the opposite order that you opened them. You open the &lt;p&gt; first, followed by the &lt;strong&gt;, which means you reverse that and close the &lt;/strong&gt; and then the &lt;/p&gt;. </p>
+                <p>Another way to think about this is to once again use the analogy of boxes. If you place a box inside another box, you have to close the inner one before you can close the outer or containing box. </p>
+            </div>
+
+            <h2 class="heads">What is CSS?</h2>
+            <p class="left-p">Definition:</p>
+
+            <div class="left-side">
+                <ul>
+                    <li>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.</li>
+                    <li>CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</li>
+                    <li>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.</li>
+                    <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+                    </li>
+                    <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                    <li>External stylesheets are stored in CSS files</li>
+                </ul>
+            </div>
+            <p class="left-p">What's all this then?</p>
+            <div class="left-side">
+                <ul>
+                    <li>HTML provides a way to place many different types of objects onto the web page.</li>
+                    <li>CSS is a styling language</li>
+                    <li>Bootstrap is a framework with templates creating "things" (like panels, menus etc.) with html and CSS that can be used in Responsive Web Design (RWD). RWD means the site adapts (responds) to display optimally on many devices.</li>
+                    <li>JavaScript (JS) is the scripting language for the web. It is an interpreted language and add functionality to a website, allowing elements to be changed "in-place" or sending forms, hiding or displaying new elements.  You could even have a game rendered in the webpage written entirely in JS.</li>
+                </ul>
+            </div>
+            <p class="left-p">
+                We only have to do the first two of these, but depending on time we will often do some Bootstrap and/or JavaScript.
+            </p>
+
+            <img class="inline-images" title="HTML,CSS" src="images/html_and_css.PNG" alt="HTML&CSS"/>
+            <img class="inline-images" title="HTML,Bootstrap,CSS&Js" src="images/withJs.PNG" alt="JavaScript-image"/>
+
+            <div class="left-p">
+                <p>CSS Syntax:</p>
+                <p>The syntax for CSS is similar to the syntax for languages such as Java or C.</p>
+            </div>
+
+            <img id="css-rules-image" title="css-rules" src="images/rules.PNG" alt="css-rules"/>
+            <p id="left-p">The selector may be: </p>
+            <div class="left-side">
+                <ul>
+                    <li>A html tag like h1, h2, p, body etc. All the objects we have seen in the tags page.</li>
+                    <li>An id (more info below)</li>
+                    <li>A class (more info below)</li>
+                </ul>
+            </div>
+
+            <p class="left-p">Note that:</p>
+            <div class="left-side">
+                <ul>
+                    <li>{Curly braces} denote the start and end of the block </li>
+                    <li>The colon : denotes a property being assigned a value</li>
+                    <li>The semi-colon denotes "end";</li>
+                </ul>
+            </div>
+
+            <div class="left-p">
+                <p>Important points to note</p>
+                <p>If you want to style many elements with the same properties and values, you can do it like this:
+                    h1, h2, h3, #special, .bluey {color: blue; font-family: Arial}</p>
+                <p>By using commas to separate the selectors, we can apply the attributes to ALL of the selectors at the same time. </p>
+                <p>In the example above:</p>
+            </div>
+            <div class="left-side">
+                <ul>
+                    <li>Hashtag # denotes an id</li>
+                    <li>dot . denotes a class</li>
+                </ul>
+            </div>
+            <div class="left-p">
+                <p>Targeting</p>
+                <p>What if we have one unordered list in the nav and another in the main body of the page, but we want to style them differently?</p>
+                <p>We have two (or more) options.  We can: </p>
+                <p>Specify where the element lives if the one we want to target can be separated from the others i e.</p>
+                <p>nav > ul > li {background-color: green; color: white;} </p>
+                <p>This will target ONLY the unordered li elements that live in the nav.</p>
+            </div>
+            <h2 class="heads">Using Class and ID </h2>
+            
+                <p class="left-p">An ID is:</p>
+            <div class="left-side">
+                <ul>
+                    <li>A unique identifier that appears only ONCE on a page</li>
+                    <li>there can be ONLY ONE</li>
+                    <li><p>In CSS, an ID is denoted by a hashtag #</li>
+                    <li>&lt;p id = "special"> This is a special paragraph&lt;/p&gt; would be styled using the following rule- note the hashtag means id </li>
+                    <li>#special {margin-left: 15px; font-weight: italic;}</li>
+                </ul>
+            </div>
+            <div class="left-p">
+                <p>While the id (identifier) is a way to target that ONE thing on a page, you will often want to target many things- not only on a page but also on an entire site. </p>
+                <p>A class is a way to package up one or more attributes and we can apply these to many objects, regardless of the type of object.</p>
+                <p>Say you wanted to style all the images to show as being the same size and with a rounded edge- then you make a class. </p>
+            </div>
+
+            <div class="left-p">
+                <p>&lt;img src = "images\image1.jpg" class="pikrounded"&gt;</p>
+                <p>&lt;img src = "images\image2.png" class="pikrounded""&gt;</p>
+                <p>&lt;img src = "images\image3.gif" class="pikrounded"&gt;</p>
+                <p>So we have three different images, all of different file formats and possibly of different sizes.  We can make them all appear to be the same size</p>
+                <p>.pikrounded {width: 600px; height: 380px; border-radius: 15px; }</p>
+                <p>Validators:</p>
+                <p>
+                    <a href ="https://validator.w3.org/" target ="_blank">Validate HTML pages here</a>
+                </p>
+                <p>
+                    <a href ="https://jigsaw.w3.org/css-validator/" target ="_blank">Validate CSS pages here</a>
+                </p>
+            </div>
+
+            <!-- opens footer -->
+            <div id = "footer">
+                <p class="footer">&copy;
+                        2021 IT Course
+                    </p>
+            </div> <!-- closes footer -->
+        </div> <!-- closes content-container -->
+
+        <!-- Js -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+            integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+            crossorigin="anonymous">
+        </script>
+        <div class="slider"></div>
+        <script src="js/app.js"></script>
+    </body>
+    
+</html>

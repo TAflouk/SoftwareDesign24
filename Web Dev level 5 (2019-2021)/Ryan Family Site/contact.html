@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Rayn Family Home Page</title>
+	<meta charset="utf-8">
+	<link rel = "stylesheet" href="ryanstyle.css">
+</head>
+
+    <!--home page-->
+<body>
+	 <!-- div for  buttons-->
+	<div id="nav">
+		<ul>
+			<li><a href= "index.html">Home</a></li>
+			<li><a href= "wicklow.html">Wicklow</a></li>
+			<li><a href= "austria.html">Austria</a></li>
+            <li><a href= "contact.html">Contact</a></li>
+		</ul>
+	</div>
+<form action="#" method="post">
+    <fieldset class="intro">
+        <h1>Contact Us</h1>
+        <p>Thanks for visiting our site, if you have any question about our travels or our dog, please get in touch.</p>
+        <p class = "redtext">*Required</p>
+    </fieldset>
+
+    <fieldset>
+        <lable>Email address<span class = "redtext">*</span></lable><br>
+        <input type = "email"
+        placeholder="Your email address">
+    </fieldset>
+
+    <fieldset>
+        <lable>Your message<span 
+        class="redtext">*</span></lable><br>
+        <input type="text"
+        placeholder="Your message">
+    </fieldset>
+
+    <fieldset><label>Where did you first find a link to our site?</label><br>
+        <input type="radio" id="Facebook" name="site" value="Facebook">
+        <label for="Facebook">Facebook</label><br>
+        <input type="radio" id="Twitter" name="site" value="Twitter">
+        <label for="Twitter">Twitter</label><br>
+        <input type="radio" id="engine" name="site" value="engine">
+        <label for="engine">Sereach Engine</label><br>
+        <input type="radio" id="other" name="site" value="other">
+        <label for="other">Other</label>
+    </fieldset>
+
+    <fieldset>
+        <lable for="rating">Please rate our site</lable><br>
+        Terrible<input class = "cntr" type="range" id="rating" name="rating" min="1" max="10">Brilliant
+    </fieldset>
+
+    <fieldset>
+        <input type="checkbox" id="highlands" name="highlands"
+        value="highlands">
+        <label for="highlands">Scottish Highlands</label><br>
+
+        <input type="checkbox" id="pyrenees" name="pyrenees"
+        value="pyrenees">
+        <label for="pyrenees">The Pyrenees</label><br>
+
+        <input type="checkbox" id="carpathian" name="carpathian"
+        value="pyrenees">
+        <label for="carpathian">Carpathian Mountain </label><br>
+
+        <input type="checkbox" id="balkan" name="balkan"
+        value="balkan">
+        <label for="carpathian">Balkan Mountain </label><br>
+
+    </fieldset>
+    <input class="btn" type="submit">
+
+
+</form>
+
+
+<footer>&copy; Jim Corr 2020</footer>
+
+</body>

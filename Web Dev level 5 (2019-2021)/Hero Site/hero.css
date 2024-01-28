@@ -1,0 +1,39 @@
+html{background-color: #000;}/*hex num for color */
+body{font-family: Arial;
+text-align: center;
+background-color: rgb(219, 170, 215);
+width: 800px;
+margin:auto;
+padding: 25px;
+}
+
+h1, p, li, td ,dt,dd{text-align: left;}
+
+h1{color:#292f52;
+    font-family:"Comic Sans MS", Arial, Helvetica,Sans-serif;
+    }
+h3{color: rgb(21, 21, 128);}
+
+table, td{color:rgb(128, 21, 101);}
+
+table{margin-bottom: 40px;}
+
+td{padding:10px;}
+
+/*to create buttons*/
+nav{text-align: center;}
+table,td{border:1px solid black;}
+h3{text-align: center;}
+nav a{background-color: #347;
+color:white;
+font-size: 1.2em;
+text-decoration: none;/*removes underline*/
+padding: 15px;
+margin:15px;
+border-radius: 10px;}
+nav a:hover{background-color: rgb(97, 77, 167);} 
+
+.title{width:400px;}
+.cntr{margin: auto;}
+
+.pikmain{width:400px;height: 400px ; border-radius: 20px;}

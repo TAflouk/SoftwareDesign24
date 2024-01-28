@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ex 3 </title>
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			html {background:rgb(255, 255, 204)}
+		</style>
+		<script>
+			function $(id)
+			{
+				return document.getElementById(id);
+			}
+			function FactorialCountdown()
+			{
+				/*create a var to store the html output that be generated during the programe */
+				var htmlOut = "<h1 class='w3-black w3-center'> Factorial Countdown</h1>";
+				/*create a var result and set it equal to 1*/
+				var result = 1;
+				/* ask user for a num and convert it to an int data type*/
+				var userEntry = parseInt(prompt("Enter a positive numerical value: "));
+				/*we must check the value and make sure that is positive and less  than 20 */
+				if(isNaN(userEntry) || userEntry < 1 || userEntry > 20)
+				$("TheBody").innerHTML = "<h1 class='w3-red w3-center'>ERORRRRRR!!!!</h1>" + 
+					"<h3>Please enter an integer value between 1 and 20<br/>Refresh your page to continue...</h3>";
+
+				else
+				{
+					/* we need two loops, the outer loop controls the parameter i  which  is fed to into the second loop calculkates  the 
+					
+					factorial of the value at that time i.e whatever i is*/
+				for (var i = userEntry; i >= 1; i-- )
+				{
+					result = 1;
+					console.log("outterloop value is: " +i);
+					for(var j = i; j>=1; j--)
+					{
+						result *= j;
+						console.log("\tInner loop value is:" + j + "\tResult var = " + result);
+					}
+						htmlOut += i + "l = " + result + "<br/>";
+				}
+				$("TheBody").innerHTML = htmlOut;
+				console.log(htmlOut);
+				}
+			}
+
+
+		</script>
+
+	</head>
+	<body id="TheBody" onLoad="FactorialCountdown()">
+	</body>
+</html>

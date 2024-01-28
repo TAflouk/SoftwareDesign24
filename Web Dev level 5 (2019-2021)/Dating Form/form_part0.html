@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Peer Assignment Wk1</title>
+	<meta charset="utf-8">
+	<!-- We can put the CSS into the same document- makes it easier for quick changes and keeps everything in one file -->
+	<style>
+		body{font:Arial;
+
+		}
+		
+		h1{
+		}
+		
+		fieldset{border:20%;
+				background-color: #eeeeee;	
+		
+		}
+
+		le
+
+		label{
+			
+		}
+		
+		textarea{
+		
+		}
+		
+		.ctr{
+		
+		}
+
+		body{
+		}
+
+		.slider{
+			display:inline-block;
+            width:70px;
+            text-align:center;
+            color:white;
+            vertical-align:top;
+            padding:5px;
+            margin-top: -5px;
+		
+		}
+		
+		.red1{
+			 }
+
+		}
+		
+		.purple1{
+		
+		}
+		
+	</style>
+</head>
+
+<body>
+
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+      
+    <form action="#" method="post">
+		<!-- first filed -->
+    	<fieldset>
+	    	<legend>Your Face</legend>
+	    	<label for="avatar">Your image:</label> <input type="file" id = "avatar" name = "avatar" ><br>
+	    	Image preview: <img id="preview">
+		</fieldset>
+
+		<!-- second filed -->
+		<fieldset>
+			<legend>Your General Details</legend>
+			<label for="text">Name:</label> <input type="text"  name="text" placeholder="Enter Your Name"><br>
+
+			<label for="button">Gender:</label> <input type="radio" id="button" name="gender" value="male"><label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label><br>
+
+			<label for="date">Age:</label>
+			<input type="number" id="age" name="age"><br>
+
+			<label for="age">Date Of Birth:</label>
+			<input type="date" id="date" name="date"><br>
+
+			<label for="color">Favourt color:</label>
+			<input type="color" id="color" name="color" value=""><br>
+
+			<label for="country">Which country</label>
+			<select id="country" name="country">
+				<option value="ireland">Ireland</option>
+				<option value="Albania">Albania</option>
+				<option value="Algeria">Algeria</option>
+				<option value="American Samoa">American Samoa</option>
+				<option value="Andorra">Andorra</option>
+				<option value="Angola">Angola</option>
+			</select>
+		</fieldset>
+
+
+		<!-- third filed -->
+		<fieldset>
+			<legend>Your Indicators</legend>
+			<label>Height:</label>
+			<span class ="red1">Short <input  type="range" id="Height" name="Height" min="1" max="10"> Tall</span> <br>
+			<label>Salary:</label>
+			<span class ="red1">Poor <input  type="range" id="Height" name="Height" min="1" max="10"> Rich </span>
+		</fieldset>
+
+		<!-- forth filed -->
+		<fieldset>
+			<legend>Your Contact Information</legend>
+			<label>Email:</label>
+			<input type="email" id="email" name="email"><br>
+
+			<label>Mobile:</label>
+			<input type="tel" id="mobile" name="mobile"><br>
+			<label for="address">Address: </label><br><textarea id="address" name="feedback"></textarea><br>
+			<label>Method To Contact You:</label>
+			<input type="checkbox" id="contact" name="contact"><label>Email</label>
+			<input type="checkbox" id="contact" name="contact"><label>WhatsApp</label>
+			<input type="checkbox" id="contact" name="contact"><label>In-app-chat</label>
+		</fieldset>
+		
+		
+	    
+	    <input type = "submit" value = "Submit">
+    </form>
+	<script src="dating_web_site.js"></script>
+</body>
+</html>

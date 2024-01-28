@@ -1,0 +1,240 @@
+
+/* @Author:Taha Aflouk */
+/* @Date:2021-01-14 11:33:20 */
+/* @LastModifiedBy:TAflouk */
+/* @Last Modified time:2021-02-02 24:00:00 */
+
+/*======================================  HTML and body design   =======================================*/
+html{
+    background-image: linear-gradient(rgba(187, 184, 184, 0.514),black);
+}
+
+body{
+    background-color:  white;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+/*======================================  Flag  =======================================*/
+.flag{
+    background-color:gray;
+    height: 300px;
+    width: 420px;
+    margin: 0 auto;
+    box-shadow: 15px 15px 10px black;
+    position: relative;
+    animation: mymove 5s infinite;
+    
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+
+.first{
+    background-color: green;
+    width: 140px;
+    height: 100%;
+    float: left;
+}
+
+.second{
+    background-color: white;
+    width: 140px;
+    height: 100%;
+    float: left;
+}
+
+.third{
+    background-color: orange;
+    width: 140px;
+    height: 100%;
+    float: left;
+}
+/*===================================================================================================*/
+
+
+
+/*======================================  Design buttons  =======================================*/
+#nav{
+    margin-bottom: 30px;
+}
+
+#nav li{
+    display: inline;
+    list-style: none;
+    
+}
+
+#nav li a {
+    background-color: rgb(150, 149, 140);
+    text-decoration: none;
+    padding: 15px;
+    margin: 15px;
+    text-shadow: 2px 2px 2px #dfe1e2;
+    font-size: 100%;
+    border-radius: 10px;
+}
+
+#nav a:visited{
+    color: rgb(20, 20, 20);
+
+}
+#nav a:hover{
+    color: rgb(211, 204, 204);
+}
+
+#nav a:active{
+    color: rgba(240, 232, 232, 0.61);
+}
+
+/*============================================== Heading1 and 2 ========================================================*/
+h1 , h2{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(150, 149, 140);
+    margin-top: 15px;
+    box-shadow: 15px 15px 10px black;
+    text-shadow: 2px 2px 2px #dfe1e2;
+}
+
+/*==============================================paragrapgh position========================================================*/
+p{
+    text-align: left;
+}
+
+.font-fa{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+.footer{
+    background: rgb(150, 149, 140);
+    min-height: 80px;
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 15px 15px 15px black;
+}
+
+
+.righty{
+    text-align: right;
+}
+
+.left{
+    text-align: left;
+    
+}
+
+
+/*table in home page  */
+
+table {
+  border-collapse:separate;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color:black; color: wheat;
+}
+
+th {
+  background-color:rgb(150, 149, 140);
+  color: white;
+}
+
+
+/*images for all pages resize them and fix   */
+img{
+    width:500px;
+	border-radius:3%;
+    border:10px solid #c7c6c5;
+    box-shadow: 15px 15px 15px black;
+    height: 400px;
+
+}
+
+
+
+.text_area{
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/*contact form */
+
+label{
+    width:180px;
+    display:inline-block;
+    }
+            
+    
+    
+/*contact form ID */
+fieldset{
+    background-color:rgb(179, 174, 174);
+    width: 80%;
+    margin-left: 8%;
+    border-radius: 15px;
+}
+.form-html{
+        width:100%;
+        display:inline-block;
+        letter-spacing:normal;
+        text-align:left;
+        background:#1616161f;
+        margin-bottom:10px;
+        width:720px;
+}
+.div-1-form{
+    padding-left: 20px;
+
+}
+
+.sec-div-form{
+    padding-left: 20px;
+    float: left;
+
+}
+.div-3-form{
+    float: right;
+}
+
+
+.input_width{
+    width: 80%;
+}
+
+
+.input-textarea{
+    width: 80%;
+    height: 80px;
+    text-align:left;
+}
+
+.radio-b{
+    margin-right: 20px;
+    padding-left: 20px;
+    float: left;
+}
+
+.submitB{
+    background-color: rgb(173, 173, 169);
+    text-decoration: none;
+    padding: 8px;
+    width: 120px;
+    margin: 10px;
+    margin-left: 55px;
+    text-shadow: 2px 2px 2px #dfe1e2;
+    font-size: 100%;
+    border-radius: 10px;}
+

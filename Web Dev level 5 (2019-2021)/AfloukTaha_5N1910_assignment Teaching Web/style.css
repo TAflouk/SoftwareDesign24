@@ -1,0 +1,201 @@
+/* html background in home  page */
+html{
+	 background-color:#b3ffb3;
+	}
+/* html background in webs  page */
+.web{background-color:#ffff66;
+}
+/* html background in contact  page */
+.contact{background-color:#ffc266;
+	
+}
+/* html background in history  page */
+.histo{
+	background-color:#c4ff4d;
+}
+	
+/*=======================================================================================================================================*/	
+/*body selectors defaul tvalue*/	
+body{
+		background-color:#666699;
+		width:1000px;
+		margin:auto;
+		text-align:center;   /* centers everything */
+		padding:15px;
+	}
+/*=========================================================================================================================================*/
+	
+	
+	
+	
+/*========================================================================================================================================*/
+/*headings1 and 2 and 3  selectors  and defaul value*/	
+h1 {	
+	font-variant: normal;
+	font-style: normal ;/* ;*/
+	font-family:"Courier New";
+	color:black;
+	padding:10px;
+	font-size:60px;
+}
+/*heading 2*/
+h2{font-size:30px;
+}
+/*heading 3*/
+h3{font-size:20px;
+
+}
+/*========================================================================================================================================*/
+
+.header {
+	background:#006666;
+	min-height:80px;
+	padding-top:20px;
+	color:white;
+	text-align:center;
+	box-shadow: 15px 15px 10px black;
+}
+
+
+
+
+
+/*===============================================================================================================================*/
+/*paragraphs selectors and defaul the value*/
+p{
+	/* Global values */
+	letter-spacing:normal;
+	font-family:courier;/* your choice-pick whatever font */
+	text-align:left;
+}
+/*=========================================================================================================================================*/
+/*ul list in history page*/
+.unorder {
+	letter-spacing:normal;
+	font-family:courier;/* your choice-pick whatever font */
+	text-align:left;
+	text-align:left
+}
+.order{
+	letter-spacing:normal;
+	font-family:courier;/* your choice-pick whatever font */
+	text-align:left;
+	text-align:left
+}
+
+/*images selectors and  defaul value*/
+
+
+/*class for img to make shadows*/
+.shadow{
+box-shadow: 15px 15px 10px black;
+}
+
+/*table in websites page */
+.tab{background-color:#d580ff;}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even){background-color:#b3ffff}
+th {
+  background-color: #80b3ff;
+  color: white;
+}
+.olist{background-color:#a3c2c2;}
+
+/*=========================================================================================================================================*/
+/* button selectors and defaul value*/
+#nav ul {
+	list-style: none;
+}
+
+#nav a:visited{
+color:white;}
+
+#nav{
+	color: grey;
+	font-size:120%;
+	padding: 5px;
+	margin: 25px;
+}
+
+#nav a:hover{
+background-color:white;}
+
+#nav li {
+		display:inline; /*shows the list on one line befor targetting links*/
+		text-align:left;   /*shows the button on the left side */
+		transition:all 0.5s;
+		
+}
+/*removes the underline and design button*/
+
+#nav li a {
+		text-decoration:none ; /*removes the underline*/
+		display:inline-block; /*makes them into "blocks"-allows  us set a width and height in the element*/
+		width:100px;
+		
+}
+
+#nav li a:link{	
+		background:grey;/*sets bg to .....*/
+		padding:5px;/*space inside*/
+		margin:10px; /*force field outside*/
+		color:blue; /*font color*/
+		border-radius: 10px; /*round off the edges*/
+		font-size:120%;/*make text 20% larger*/	
+}
+/*sets the letters button  letters to be black color */
+#nav a:visited{
+		color:black;
+		
+}
+/*====================================================================================================================================*/
+
+/*contact form */
+
+label{
+width:180px;
+display:inline-block;
+}
+		
+
+
+/*contact form ID */
+#main{
+		width:180px;
+		display:inline-block;
+		background:#ff8533;
+		letter-spacing:normal;
+		font-family:courier;/* your choice-pick whatever font */
+		text-align:left;
+		background:#66ff66;
+		border:8px solid orange;
+		margin-bottom:10px;
+		width:720px;
+	
+}
+
+
+
+
+.add{background-color:#66ff66;}
+
+
+
+
+#footer {
+	background:#006666;
+	min-height:80px;
+	padding-top:20px;
+	color:white;
+	text-align:center;
+	box-shadow: 15px 15px 10px black;
+}
+/*classe for back to top*/
+.righty{text-align:right;}

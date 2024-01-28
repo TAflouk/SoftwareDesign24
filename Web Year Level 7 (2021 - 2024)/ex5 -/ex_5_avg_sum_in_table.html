@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ex 3 </title>
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			html {background:rgb(255, 255, 204)}
+		</style>
+		<script>
+			function $(id)
+			{
+				return document.getElementById(id);
+			}
+			function Calc()
+			{
+				var htmlOut = "<h1 class='w3-black w3-center'>Claculations Version 2</h1><p>Values entersd:</p>";
+                htmlOut += "<table border='1' style= 'margin:0 auto'>"+"<tr><th>Count</th><th>Value</th><tr>";
+				var sum = 0.0,
+					avg = 0.0,
+					count = 0.0;
+					userEntry = "";
+				while(userEntry != -1)
+				{
+					userEntry = parseFloat(prompt("Enter a numerical value"));
+
+					while(isNaN(userEntry))
+					{
+						userEntry = parseFloat(prompt("Error\nyou enterd a charachter or string that is not numeric. Please try again."));
+
+					}
+					console.log("Value input: " + userEntry)
+					if(userEntry != -1)
+					{
+                        count ++;
+						htmlOut += "<tr><td>" + count + "</td><td>" + userEntry + "</td><tr>"; 	
+						sum += userEntry;
+					}
+				}
+				console.log("loop terminated\t"+ count + "value enteries");
+				avg = (sum/count).toFixed(2);
+                htmlOut += "</table><br/><h3 class = 'w3-center'><br/>Sum = " + (sum).toFixed(2) + "<br/>Average= " + avg + "<h3/>";
+				
+				$("theBody").innerHTML = htmlOut;
+				console.log(htmlOut);
+
+
+			}
+
+
+		</script>
+
+	</head>
+	<body id="theBody" onLoad="Calc()">
+	</body>
+</html>

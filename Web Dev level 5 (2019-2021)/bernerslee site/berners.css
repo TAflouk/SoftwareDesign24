@@ -1,0 +1,18 @@
+
+/*style for the html background*/
+html{background-color: rgb(5, 0, 0);/*colo = black */
+    padding: 20px;}/* and padding = 20px */
+
+.paragraph1{font-style: italic;}
+h1{ text-align:center; /* center the h1 */
+    color:red; /* red color to the h1 */
+    background-color: yellow;} /* background color to the  h1 */
+
+/* style for  the body*/
+body{font-family: Arial;/* font-family = Arial */
+font-size: 1.1em;  /*font-size = 1.1em */
+background-color: #bbb;  /*backg-col= white */
+width: 800px;  /* width = 800px*/
+margin:auto;  /* margin = auto*/
+padding: 155px;  /* padding = 15px*/
+}

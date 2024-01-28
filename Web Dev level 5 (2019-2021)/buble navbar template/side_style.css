@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/* Generic */
+html{
+    font-family: sans-serif;
+}
+
+nav ,#footer{
+    height: 10vh;
+    background: #5D4954;
+  }
+
+#footer{
+  clear:both;
+}
+
+#header{
+  text-align: center;
+  align-items: center;
+}
+
+#content{
+  border: 0px solid blue;
+  margin:0px;
+  min-height: 800px; 
+  width:100%;
+  float: right;
+  vertical-align:top;
+}
+
+#header, #footer, #content{
+  padding: 20px;
+}
+  
+#content-container{
+    height: 100%;
+    width: 100%;
+
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+/* Classes */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+.nav-links li a {
+    color: #E2E2E2;
+    text-decoration: none;
+    font-family: 'Train One', cursive;
+    font-size: 16px;
+}
+
+/* Media screen */
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #E2E2E2;
+    margin: 5px;
+  }
+  nav {
+    position: relative;
+  }
+
+  #hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #5D4954;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  #content-container{
+    flex-direction: column;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 25px;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 1;
+  }
+}

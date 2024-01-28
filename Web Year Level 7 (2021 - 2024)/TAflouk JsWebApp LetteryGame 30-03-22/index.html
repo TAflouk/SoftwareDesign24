@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Lettery Game</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+	<script type="text/javascript" src="jscripts/letterGame.js"></script>
+
+
+</head>
+
+<body class="w3-margin">
+	<header class="w3-row w3-black w3-center">
+		<h1 class="logo">Lettery Game</h1>
+	</header>
+	<div class="w3-row-padding w3-main w3-margin bkground">
+		<div class="w3-third w3-container">
+			<h3>The rules of the game:</h3>
+			<p>The rules of the game are as follows:
+			<ol>
+				<li>Choose how much money you want to insert</li>
+				<li>Click on "Insert Coin"</li>
+				<li>5 different random balls drawn</li>
+				<li>Enter your single letter in the box</li>
+				<li>Click "Add Letter"</li>
+				<li>If you insert 5 you and you match some then you get match you letters in the table below</li>
+				<li>If you insert 10 Euro then you get triple of that value you have matched X3</li>
+			</ol>
+			<table class="w3-table-all w3-hoverable table_style" border="0">
+				<tr>
+				  <th>Balls</th>
+				  <th></th>
+				  <th>Euro</th>
+				</tr>
+				<tr>
+				  <td id="a" class="cntrtxt">0</td>	
+				  <td>=</td>	
+				  <td id="b" class="cntrtxt">0</td>
+				</tr>
+				<tr>
+				  <td id="c" class="cntrtxt">1</td>	
+				  <td>=</td>	
+				  <td id="d" class="cntrtxt">20</td> 
+				</tr>
+				<tr>
+				  <td id="e" class="cntrtxt">2</td>	
+				  <td>=</td>	
+				  <td id="f" class="cntrtxt" >50</td> 
+				</tr>
+				<tr>
+				  <td id="g" class="cntrtxt" >3</td>	
+				  <td>=</td>	
+				  <td id="h" class="cntrtxt">350</td> 
+				</tr>
+				<tr>
+				  <td id="i" class="cntrtxt">4</td>	
+				  <td>=</td>	
+				  <td id="j" class="cntrtxt">650</td> 
+				</tr>
+				<tr>
+				  <td id="k" class="cntrtxt">5</td>	
+				  <td>=</td>	
+				  <td id="l" class="cntrtxt">2500</td> 
+				</tr>
+			  </table>
+			</p>
+
+			  
+			  
+		</div>
+		<div class="w3-third w3-container ">
+			<table class="w3-table">
+				<tr>
+					<td>Select Money Amount</td>
+					<td style="text-align: center">
+						<select id="bet">
+							<option value="5">5&euro;</option>
+							<option value="10">10&euro;</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center">
+						<button class="w3-button w3-black w3-block" id="GenerateRandLetrs">Insert Coins</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Enter a Single letter</td>
+					<td><input id="letterBox" disabled /></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center">
+						<button class="w3-button w3-black w3-block" id="addChar" disabled>Add Letter</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<h2 class="w3-center" id="lettersLeft">Insert Coins!</h1>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center">
+						<button class="w3-button w3-black w3-block" id="reset">Restart</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="w3-third w3-container w3=center">
+			<h2 class="w3-center" >RESULTS</h2>
+			<p id = output1>You have 50 &euro; in your wallet... </p>
+			<p id="output2">Random Balls: <br>You Picked: <br>You got  Balls:  </p>
+			<p id="output3">Good Luck.</p>
+			<img src="images/letters4.jpg" class="w3-image w3-center imgStyle" id="img"/>
+			
+		</div>
+	</div>
+    <div class="intro">
+		<div class="intro-text">
+		  <p class="hide">
+			<span class="text">Welcome Back!</span>
+		  </p>
+		  <p class="hide">
+			<span class="text">Let's Have</span>
+		  </h1>
+		  <p class="hide">
+			<span class="text">Some Fun...</span>
+		  </p>
+		</div>
+	  </div>
+	  <div class="slider"></div>
+	  <script
+		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+		integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+		crossorigin="anonymous"
+	  ></script>	
+	
+</body>
+
+</html>

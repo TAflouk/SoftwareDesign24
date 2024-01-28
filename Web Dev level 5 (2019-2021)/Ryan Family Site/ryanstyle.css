@@ -1,0 +1,104 @@
+/* This is the stylesheet for the Ryan Family Website */
+
+
+/** This is the stylesheet for the Ryan Family Website
+Colors from https://www.canva.com/learn/website-color-schemes/
+aluminium: #D9D3D9
+light: #F9CF00
+tangerine: #F1914D
+cerulean: #4484CE
+**/
+
+
+html{background-image: linear-gradient(#32c19d, #23583b); } 
+ 
+body{background-color:#03fc6f; 
+ width:750px;
+ margin:auto; /* centers the body elements  */   
+ text-align:center;   /* centers the text*/   
+ font-family:"Comic Sans MS"; /* use quotes */  
+ padding:20px
+ }
+
+
+ 
+h1, h2, footer{color:#34eb86;
+			font-family: sans-serif; 
+			background-color:#ac339b; 
+			margin-top:15px;  /* adds space above (inside) */ 
+ } 
+ 
+p{text-align:left; 
+ }
+
+#nav{margin-bottom: 30px;}
+
+ 
+  /* display the li to inline display  and  type none  */ 
+#nav  li {display:inline;		  
+		  list-style-type:none;
+		  }
+
+/* to create the buttons */ 
+#nav  li a{background-color:#F1914D;
+		text-decoration:none;
+		padding:15px;
+		margin:15px;
+		color:white;
+		font-size:120%;
+		border-radius:10px;
+}
+
+#nav a:visited{color:white;}
+
+#nav a:hover{color:#F9CF00;}
+
+#nav a:active{color:#57122D;}
+
+fieldset{margin: 10px 60px 10px 60px;
+	background-color:white;
+	border-color:#ccc;
+	font-family: sans-serif;
+	border-radius: 15px;
+	text-align: left;
+	padding: 30px;
+}
+
+fieldset h1{text-align: left;
+	color: black;
+	background-color: inherit;
+	font-family: sans-serif;
+	font-weight: normal;
+	padding: 0px;
+	font-size:2em;
+}
+
+input{
+	border:0px;
+	padding-top: 40px;
+	border-bottom: 1px solid #555;
+	margin-top: 10px;
+}
+
+
+.btn{padding:15px 25px 15px 25px;
+	background-color:#d86d21;
+	color:white;
+	border-radius: 8px;
+	display: block;
+	text-align: left;
+	margin-left: 65px;
+}
+
+img{width:50%;
+	border-radius:5%;
+	border:10px solid #F1914D;}
+
+	
+.intro{border-top: 12px solid #F1914D;}
+
+.redtext{color:red}
+
+	
+
+
